@@ -5,6 +5,6 @@ For i as Integer = 1 to fat-1 step 1
     fat = fat*i    
 Next
 
-print fat
+print "Fatorial --> " & fat
 
 sleep
