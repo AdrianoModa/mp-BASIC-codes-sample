@@ -5,7 +5,8 @@ Input "Entre com um numero inteiro qualquer: ", num
 
 Do while(i <= num)
     if(num mod i = 0) then        
-        print i & " e divisivel por " & num        
+        print i & " e divisivel por " & num
+        cont = cont + 1
     end if    
     i = i+1
 Loop
