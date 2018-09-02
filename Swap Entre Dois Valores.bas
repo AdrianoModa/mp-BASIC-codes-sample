@@ -1,34 +1,13 @@
-'O Corinthians sempre ganha
-Dim As String timeA, timeB
-Dim As Integer golsTimeA, golsTimeB
-timeA = "Corinthians"
-Randomize , 1
-For i As Integer = 1 To 10
-    golsTimeA = Rnd * 9 + 1
-Next
+Dim x As Integer, y As Integer
 
-Randomize , 1
-For j As Integer = 1 To 10
-    golsTimeb = Rnd * 9 + 1
-Next
+sub valor(a as Integer, b as Integer)
+    print a, b
+end sub
 
-if(golsTimeA = golsTimeB) then 
-    golsTimeB = golsTimeB + 1
-end if
-
-Input "Digite o nome do adversario do Corinthians x ", timeB
-
-if(golsTimeA < golsTimeB) then
-    Swap golsTimeB, golsTimeA
-end if
-
-print "Resultado: " & timeA & " " & golsTimeA
-print "Resultado: " & timeB & " " & golsTimeB
-
-if(golsTimeA >= golsTimeB) then
-    print timeA & " venceu!"
-else 
-    print timeB & " venceu!"
-end if
-beep
+Input "Digite um valor: "; x
+Input "Digite outro valor: "; y
+valor(x, y)
+Print "Agora o valores em ordem trocada"
+Swap x, y
+valor(x, y)
 sleep
