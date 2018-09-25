@@ -8,7 +8,7 @@ Function fatorialRecursivo(ByVal n As Integer) As Integer
     End If
 End Function
 
-? "<< Fatorial Recursivo >>"
+print "<< Fatorial Recursivo >>"
 input "Entre com um numero inteiro: ", num
 print "Fatorial Recursivo de "& num ; " -->"; fatorialRecursivo(num)
 sleep
